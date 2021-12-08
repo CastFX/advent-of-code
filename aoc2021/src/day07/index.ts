@@ -28,17 +28,10 @@ const getMinFuelUsed = (
 const part2 = (rawInput: string) => {
   const input = parseInput(rawInput)
   
-  const fuelUsageMemo: {[key: number]: number} = {};
   const fuelUsedCalculator = (input: number[], position: number): number => {
     return _.sum(input.map(n => {
       const diff = Math.abs(n - position);
-
-      if (fuelUsageMemo.hasOwnProperty(diff)) 
-        return fuelUsageMemo[diff];
-      
-      const fuelUsage = _.sum(_.range(1, diff+1));
-      fuelUsageMemo[diff] = fuelUsage;
-      return fuelUsage;
+      return (diff*diff + diff) / 2;
     }));
   }
   

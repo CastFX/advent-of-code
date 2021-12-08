@@ -86,13 +86,13 @@
         "solved": true,
         "result": "353079",
         "attempts": [],
-        "time": 0.45
+        "time": 0.48
       },
       "part2": {
         "solved": true,
         "result": "1605400130036",
         "attempts": [],
-        "time": 1.42
+        "time": 1.51
       }
     },
     {
@@ -103,13 +103,13 @@
           "444120",
           "353622"
         ],
-        "time": 28.59
+        "time": 27.85
       },
       "part2": {
         "solved": true,
         "result": "94004208",
         "attempts": [],
-        "time": 66.3
+        "time": 28.05
       }
     },
     {
