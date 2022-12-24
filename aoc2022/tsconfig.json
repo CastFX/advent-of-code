@@ -5,6 +5,7 @@
     "removeComments": true,
     "declaration": true,
     "outDir": "./dist",
+    "sourceMap": true,
     "preserveConstEnums": true,
     "strict": true,
     "allowSyntheticDefaultImports": true,

@@ -24,11 +24,7 @@ const part2 = (rawInput: string) => {
 
   return _.chain(input)
     .split("\n")
-    .reduce((curry: number[][], line) => {
-      if (line) curry[curry.length-1].push(parseInt(line))
-      else curry.push([]);
-      return curry;
-    }, [[]])
+    .reduce(groupByNewLines, [[]])
     .map((items) => _.sum(items))
     .sort((a,b) => b-a)
     .take(3)
