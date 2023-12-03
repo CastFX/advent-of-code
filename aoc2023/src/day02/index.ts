@@ -44,11 +44,6 @@ const part2 = (rawInput: string) => {
   return gameMaxes
     .map(maxes => Object.values(maxes).reduce((a,b) => a*b))
     .reduce((a, b) => a+b)
-
-
-
-
-  return
 }
 
 run({
